@@ -1,0 +1,6 @@
+pre-commit
+pandas
+matplotlib
+numpy
+scikit-learn
+ipykernel
