@@ -36,9 +36,9 @@ if __name__ == "__main__":
 
     param_distribs_rf = {
         "n_estimators": randint(low=1, high=300),
-        "criterion": ["gini", "entropy"],
+        # "criterion": ["gini", "entropy"],
         "max_depth": randint(low=1, high=100),
-        "min_samples": randint(low=2, high=100),
+        "min_samples_split": randint(low=2, high=100),
         "max_features": ["auto", "sqrt", "log2"],
         "bootstrap": [True, False],
     }
