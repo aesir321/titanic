@@ -81,6 +81,7 @@ def create_pipeline():
         [
             # adds the ship section, returns a numpy array
             ("attribs_adder", AttributeAdder()),
+            ("imputer", SimpleImputer(strategy="most_frequent")),
             ("one_hot", OneHotEncoder(handle_unknown="ignore")),
         ]
     )
