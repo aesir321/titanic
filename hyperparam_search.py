@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     rnd_search = RandomizedSearchCV(
         RandomForestClassifier(),
-        param_distributions=param_distribs_gp,
+        param_distributions=param_distribs_rf,
         cv=5,
         random_state=RANDOM_STATE,
         scoring="f1",
