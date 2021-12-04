@@ -114,3 +114,5 @@ if __name__ == "__main__":
     model_scores = test_broad_classifiers(X_train_prepared, y_train)
 
     top_scores = dict(sorted(model_scores.items(), key=itemgetter(1), reverse=True))
+
+    print(top_scores)
