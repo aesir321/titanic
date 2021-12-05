@@ -48,7 +48,7 @@ if __name__ == "__main__":
         param_distributions=param_distribs_rf,
         cv=5,
         random_state=RANDOM_STATE,
-        scoring="f1",
+        scoring="accuracy",
         n_jobs=-1,
     )
     rnd_search.fit(X_train_prepared, y_train)
